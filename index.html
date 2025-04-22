@@ -13,11 +13,11 @@
       
         <div>
             <label for="nota1">Ingrese la primera nota 1</label>
-            <input type="text" name="nota1" id="nota1" placeholder="Ingrese la primera nota 1" required>
+            <input type="text" name="nota1" id="nota9" placeholder="Ingrese la primera nota 1" required>
         </div>
         <div>
             <label for="nota2">Ingrese la segunda nota 2</label>
-            <input type="text" name="nota2" id="nota2" placeholder="Ingrese la segunda nota 2">
+            <input type="text" name="nota2" id="nota8" placeholder="Ingrese la segunda nota 2">
         </div>
         <div>
             <label for="nota3"></label>
@@ -27,8 +27,11 @@
         </div>
         
     </form>
-    <script src="javascript/formulario.js"></script>
 
+    
+<br>
+<br>
+<br>
     <!--Formulario de par o impar-->
 
     <form action="" name="Formulario par o impar" method="post">
@@ -40,7 +43,11 @@
             <input type="submit" value="Enviar" name="Enviar" onclick="aproImpar()">
         </div>
     </form>
-    
+
+    <br>
+    <br>
+    <br>
+
     <form action="" name="Formulario numero mayor" method="post">
         <div>
             <label for="num1">Ingrese numero</label>
@@ -71,13 +78,41 @@
             <input type="submit" name="Enviar" id="Enviar">
         </div>
     </form>
+<br>
+<br>
+<br>
+<!--Crear un programa en js donde se ingrese las cinco notas del primer parcial, verificar si el promedio es mayor o igual a 7 pasa de año
+Si el promedio es mayor o igual a 3.5 y menor a 7 se queda suspenso y si el promedio es menor a 3.5 pierde el semestre
+Verficar que las notas ingresadas esten en un rango de 0 a 10-->
 
-    <!--crear un programa que se ingrese las 5 notas del primer parcial, verificar si el promedio 
- es mayor o igual a 7 pasa de anio, si el promedio es igual o mayor 3.5 
- y menor a 7 queda a suspenso y si es menor a 3 pierde el semestre 
- verificar que las notas ingresadas esten en un rango dde 0 a 10-->
+    <form action="" name="Formulario promedio" method="post">
+        <div>
+            <label for="nota1">Ingrese la primera nota 1</label>
+            <input type="text" name="nota1" id="nota1" placeholder="Ingrese la primera nota 1" required>
+        </div>
+        <div>
+            <label for="nota2">Ingrese la segunda nota 2</label>
+            <input type="text" name="nota2" id="nota2" placeholder="Ingrese la segunda nota 2" required>
+        </div>
+        <div>
+            <label for="nota3">Ingrese la tercera nota 3</label>
+            <input type="text" name="nota3" id="nota3" placeholder="Ingrese la tercera nota 3" required>
+        </div>
+        <div>
+            <label for="nota4">Ingrese la cuarta nota 4</label>
+            <input type="text" name="nota4" id="nota4" placeholder="Ingrese la cuarta nota 4" required>
+        </div>
+        <div>
+            <label for="nota5">Ingrese la quinta nota 5</label>
+            <input type="text" name="nota5" id="nota5" placeholder="Ingrese la quinta nota 5" required>
+        </div>
 
- 
+        <div>
+            <input type="submit" value="Enviar" name="Enviar" onclick="promedioNotas()">
+        </div>
+
+    </form>
+    <script src="javascript/formulario.js"></script>
 </body>
 
 </html>
